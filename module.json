@@ -1,0 +1,20 @@
+{
+  "name": "nrf51dk-microbit",
+  "version": "0.0.1",
+  "description": "Simple micro:bit model for the nrf51dk development board",
+  "keywords": [],
+  "author": "joe@comp.lancs.ac.uk",
+  "repository": {
+    "url": "ssh://git@github.com/finneyj/nrf51dk-microbit",
+    "type": "git"
+  },
+  "homepage": "https://github.com/finneyj/nrf51dk-microbit",
+  "license": "MIT",
+  "dependencies": {
+    "microbit-dal": "lancaster-university/microbit-dal"
+  },
+  "extraIncludes": [
+    "inc"
+  ],
+  "targetDependencies": {}
+}
