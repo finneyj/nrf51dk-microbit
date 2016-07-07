@@ -11,7 +11,7 @@
   "homepage": "https://github.com/finneyj/nrf51dk-microbit",
   "license": "MIT",
   "dependencies": {
-    "microbit-dal": "lancaster-university/microbit-dal"
+    "microbit-dal": "lancaster-university/microbit-dal#master"
   },
   "extraIncludes": [
     "inc"
