@@ -1,6 +1,6 @@
 {
   "name": "nrf51dk-microbit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple micro:bit model for the nrf51dk development board",
   "keywords": [],
   "author": "joe@comp.lancs.ac.uk",
