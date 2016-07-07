@@ -53,11 +53,11 @@ RawSerial* SERIAL_DEBUG = NULL;
 
 const MatrixPoint ledPositions[5*5] =
 {
-    {0,0},{0,1},{0,2},{0,3},{0,4},
-    {1,0},{1,1},{1,2},{1,3},{1,4},
-    {2,0},{2,1},{2,2},{2,3},{2,4},
-    {3,0},{3,1},{3,2},{3,3},{3,4},
-    {4,0},{4,1},{4,2},{4,3},{4,4}
+    {0,4},{1,4},{2,4},{3,4},{4,4},
+    {0,3},{1,3},{2,3},{3,3},{4,3},
+    {0,2},{1,2},{2,2},{3,2},{4,2},
+    {0,1},{1,1},{2,1},{3,1},{4,1},
+    {0,0},{1,0},{2,0},{3,0},{4,0},
 };
 
 const MatrixMap map = { 5, 5, 5, 5, p1, p12, ledPositions };
@@ -74,8 +74,8 @@ MicroBit::MicroBit() :
     i2c(I2C_SDA0, I2C_SCL0),
     messageBus(),
     display(MICROBIT_ID_DISPLAY, map),
-    buttonA(p17, MICROBIT_ID_BUTTON_A),
-    buttonB(p18, MICROBIT_ID_BUTTON_B),
+    buttonA(p17, MICROBIT_ID_BUTTON_A, MICROBIT_BUTTON_ALL_EVENTS, PullUp),
+    buttonB(p18, MICROBIT_ID_BUTTON_B, MICROBIT_BUTTON_ALL_EVENTS, PullUp),
     buttonAB(MICROBIT_ID_BUTTON_A,MICROBIT_ID_BUTTON_B, MICROBIT_ID_BUTTON_AB),
     bleManager(storage),
     radio(),
